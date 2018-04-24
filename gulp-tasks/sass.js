@@ -6,11 +6,13 @@ var autoprefixer = require('gulp-autoprefixer');
 var sourcemaps = require('gulp-sourcemaps');
 var browserSync = require('browser-sync');
 var reload = browserSync.reload;
+var plumber = require('gulp-plumber');
 
 //tarea sass
 gulp.task('sass', function(){
     //fuente de los archivos
     gulp.src('**/*.s+(a|c)ss', {cwd: 'src/scss'})
+    .pipe(plumber())
     .pipe(sourcemaps.init())
     .pipe(
         sass({ 

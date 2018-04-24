@@ -1,7 +1,23 @@
-/* line 4, src/scss/style.scss */
+/* line 3, src/scss/style.scss */
 body {
-  background-color: #f0f8ff;
-  color: #000;
+  background-color: #f7f8f7;
+  color: #383938;
+}
+
+/* line 8, src/scss/style.scss */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+/* line 14, src/scss/style.scss */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-align: center;
 }
 
 /*# sourceMappingURL=maps/style.css.map */
