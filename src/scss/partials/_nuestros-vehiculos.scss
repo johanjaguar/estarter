@@ -1,3 +1,102 @@
 .nuestros-vehiculos {
+  &__titulo {
+    text-align: center;
+  }
 
+  &__lead {
+    text-align: center;
+  }
+
+  &__slider {
+    ul {
+      background: $bg-slider;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      height: 230px;
+      list-style: none;
+      justify-content: space-around;
+      margin: 50px auto 20px auto;
+      padding: 40px 60px;
+    }
+
+    h4 {
+      font-weight: normal;
+      margin: 20px auto 5px auto;
+    }
+
+    p {
+      color: $lt-acentos;
+      margin: 0px auto;
+    }
+
+    li {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: center;
+      padding: 0 30px;
+
+      img {
+        max-height: 100px;
+      }
+    }
+  }
+
+  &__detalle {
+    .detalle {
+      &__image-box {
+        align-items: center;
+        background: $bg-image-detalle;
+        display: flex;
+        float: left;
+        min-height: 300px;
+        justify-content: center;
+        width: 40%;
+      }
+      
+      &__datos {
+        background: $bg-slider;
+        box-sizing: border-box;
+        padding: 20px 40px;
+        float: left;
+        max-height: 300px;
+        width: 60%;
+        
+        h4 {
+          text-align: left;
+        }
+      }
+      
+      &__caracteristicas {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        list-style: none;
+        justify-content: space-between;
+        padding: 20px 0;
+      }
+      
+      &__caracteristica {
+        padding: 0px 40px 30px 0;
+        width: 160px;
+      }
+      
+      &__icono {
+        width: 40px;
+      }
+      
+      &__titulo {
+        color: $lt-titulos;
+        font-weight: normal;
+        margin: 5px 0;
+      }
+      
+      &__lead {
+        margin: 15px 0;
+      }
+    }
+
+  }
 }

@@ -5,19 +5,135 @@ body {
 }
 
 /* line 8, src/scss/style.scss */
+.container {
+  overflow: hidden;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* line 14, src/scss/style.scss */
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
 }
 
-/* line 14, src/scss/style.scss */
+/* line 20, src/scss/style.scss */
 h1,
 h2,
 h3,
 h4,
 h5 {
   text-align: center;
+}
+
+/* line 2, src/scss/partials/_nuestros-vehiculos.scss */
+.nuestros-vehiculos__titulo {
+  text-align: center;
+}
+
+/* line 6, src/scss/partials/_nuestros-vehiculos.scss */
+.nuestros-vehiculos__lead {
+  text-align: center;
+}
+
+/* line 11, src/scss/partials/_nuestros-vehiculos.scss */
+.nuestros-vehiculos__slider ul {
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 230px;
+  list-style: none;
+  justify-content: space-around;
+  margin: 50px auto 20px auto;
+  padding: 40px 60px;
+}
+
+/* line 23, src/scss/partials/_nuestros-vehiculos.scss */
+.nuestros-vehiculos__slider h4 {
+  font-weight: normal;
+  margin: 20px auto 5px auto;
+}
+
+/* line 28, src/scss/partials/_nuestros-vehiculos.scss */
+.nuestros-vehiculos__slider p {
+  color: #fd9d9e;
+  margin: 0px auto;
+}
+
+/* line 33, src/scss/partials/_nuestros-vehiculos.scss */
+.nuestros-vehiculos__slider li {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  padding: 0 30px;
+}
+
+/* line 41, src/scss/partials/_nuestros-vehiculos.scss */
+.nuestros-vehiculos__slider li img {
+  max-height: 100px;
+}
+
+/* line 49, src/scss/partials/_nuestros-vehiculos.scss */
+.nuestros-vehiculos__detalle .detalle__image-box {
+  align-items: center;
+  background: #32bea6;
+  display: flex;
+  float: left;
+  min-height: 300px;
+  justify-content: center;
+  width: 40%;
+}
+
+/* line 59, src/scss/partials/_nuestros-vehiculos.scss */
+.nuestros-vehiculos__detalle .detalle__datos {
+  background: #fff;
+  box-sizing: border-box;
+  padding: 20px 40px;
+  float: left;
+  max-height: 300px;
+  width: 60%;
+}
+
+/* line 67, src/scss/partials/_nuestros-vehiculos.scss */
+.nuestros-vehiculos__detalle .detalle__datos h4 {
+  text-align: left;
+}
+
+/* line 72, src/scss/partials/_nuestros-vehiculos.scss */
+.nuestros-vehiculos__detalle .detalle__caracteristicas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+/* line 81, src/scss/partials/_nuestros-vehiculos.scss */
+.nuestros-vehiculos__detalle .detalle__caracteristica {
+  padding: 0px 40px 30px 0;
+  width: 160px;
+}
+
+/* line 86, src/scss/partials/_nuestros-vehiculos.scss */
+.nuestros-vehiculos__detalle .detalle__icono {
+  width: 40px;
+}
+
+/* line 90, src/scss/partials/_nuestros-vehiculos.scss */
+.nuestros-vehiculos__detalle .detalle__titulo {
+  color: #2e4b64;
+  font-weight: normal;
+  margin: 5px 0;
+}
+
+/* line 96, src/scss/partials/_nuestros-vehiculos.scss */
+.nuestros-vehiculos__detalle .detalle__lead {
+  margin: 15px 0;
 }
 
 /*# sourceMappingURL=maps/style.css.map */

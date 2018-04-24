@@ -1,8 +1,8 @@
 //- Declaration
 mixin vehiculo(image, titulo, puestosmin, puestosmax)
   li.vehiculo
-    h4.vehiculo__titulo= titulo
     img.vehiculo__image(src=image alt=titulo)
+    h4.vehiculo__titulo= titulo
     p.vehiculo__puestos= puestosmin + " - " + puestosmax + " puestos"
 ul.slider-vehiculos
   +vehiculo('assets/images/default.png', 'Mini Van', 8, 10)

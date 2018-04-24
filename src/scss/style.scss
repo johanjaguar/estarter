@@ -5,6 +5,12 @@ body {
   color: $lt-principal;
 }
 
+.container {
+  overflow: hidden;
+  margin: 0 auto;
+  max-width: 1200px,
+}
+
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
