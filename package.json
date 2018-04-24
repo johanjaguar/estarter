@@ -47,5 +47,8 @@
     "gulp-sourcemaps": "^2.6.0",
     "imagemin-pngquant": "^5.0.1",
     "require-dir": "^0.3.2"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1"
   }
 }
