@@ -1,8 +1,22 @@
-$aliceblue: #f0f8ff;
-$black: #000;
+@import 'core/variables';
 
 body {
-  background-color: $aliceblue;
-  color: $black;
+  background-color: $bg-body;
+  color: $lt-principal;
 }
-     
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-align: center;
+}
+
+@import 'partials/nuestros-vehiculos';

@@ -1,10 +1,12 @@
 const gulp = require('gulp'),
-	pug = require('gulp-pug');
+	pug = require('gulp-pug'),
+  plumber = require('gulp-plumber');
 
 gulp.task('pug', () => 
-	gulp.src('src/views/*.pug')
+	gulp.src('index.pug')
+    .pipe(plumber())
 		.pipe(pug({
 			pretty: true
 		}))
-		.pipe(gulp.dest('build/html/'))
+		.pipe(gulp.dest(''))
 );

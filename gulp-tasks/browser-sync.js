@@ -11,6 +11,6 @@ gulp.task('browser-sync', function() {
     server: {
       baseDir: './'
     },
-		browser: "firefox"
+		browser: "google chrome"
   });
 });
