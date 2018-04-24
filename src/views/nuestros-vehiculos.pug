@@ -10,11 +10,13 @@ mixin caracteristicas(icono, titulo, lead)
   .nuestros-vehiculos__slider
     include vehiculos-slider.pug 
   .nuestros-vehiculos__detalle
-    img.detalle__image(src="assets/images/default.png" alt="Mini Van")
-    h4.detalle__titulo Mini Van
-    p.detalle__puestos Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, libero optio qui quo itaque recusandae impedit dignissimos nam beatae corrupti.
-    ul.detalle__caracteristicas
-      +caracteristicas('assets/images/float.png', "Capacidad Amplia", "Lorem ipsum dolor sit amet, consectetur adipisicing.")
-      +caracteristicas('assets/images/float.png', "Capacidad Amplia", "Lorem ipsum dolor sit amet, consectetur adipisicing.")
-      +caracteristicas('assets/images/float.png', "Capacidad Amplia", "Lorem ipsum dolor sit amet, consectetur adipisicing.")
-      
+    .detalle__image-box
+      img.detalle__image(src="assets/images/default.png" alt="Mini Van")
+    .detalle__datos
+      h4.detalle__titulo Mini Van
+      p.detalle__puestos Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, libero optio qui quo itaque recusandae impedit dignissimos nam beatae corrupti.
+      ul.detalle__caracteristicas
+        +caracteristicas('assets/images/float.png', "Capacidad Amplia", "Lorem ipsum dolor sit amet, consectetur adipisicing.")
+        +caracteristicas('assets/images/float.png', "Capacidad Amplia", "Lorem ipsum dolor sit amet, consectetur adipisicing.")
+        +caracteristicas('assets/images/float.png', "Capacidad Amplia", "Lorem ipsum dolor sit amet, consectetur adipisicing.")
+
