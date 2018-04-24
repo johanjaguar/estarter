@@ -1,3 +1,5 @@
+estarter template and web site
+
 #Get started package by Johan Vargas
 Template for all the new html project.
 
@@ -20,4 +22,3 @@ gulp task
 
 #SASS task
   implement common and components basic structure
-  implement some common mix-ins
