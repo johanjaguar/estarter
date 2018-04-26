@@ -1,0 +1,179 @@
+.nuestros-vehiculos {
+  margin-top: 4em;
+  &__titulo {
+    font-size: 40px;
+    margin: 0;
+    text-align: center;
+  }
+
+  &__lead {
+    color: $lt-titulos;
+    font-size: 20px;
+    letter-spacing: 0.01em;
+    text-align: center;
+  }
+
+  &__slider {
+    ul {
+      background: $bg-slider;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      height: 200px;
+      list-style: none;
+      justify-content: space-around;
+      margin: 50px auto 20px auto;
+      padding: 0px 60px;
+      position: relative;
+      z-index: 10;
+
+      &::before,
+      &::after {
+        background: url('/assets/images/pink-arrow.png') $lt-acentos center center no-repeat;
+        color: $bg-slider;
+        content: '';
+        cursor: pointer;
+        font-size: 38px;
+        height: 60px;
+        width: 60px;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 11;
+      }
+
+      &::before {
+        -webkit-box-shadow: -10px 10px 60px -10px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: -10px 10px 60px -10px rgba(0, 0, 0, 0.75);
+        box-shadow: -10px 10px 60px -10px rgba(0, 0, 0, 0.75);
+        left: -30px;
+      }
+
+      &::after {
+        -webkit-box-shadow: -10px -10px 60px -10px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: -10px -10px 60px -10px rgba(0, 0, 0, 0.75);
+        box-shadow: -10px -10px 60px -10px rgba(0, 0, 0, 0.75);
+        transform: translateY(-50%) rotate(180deg);
+        right: -30px;
+      }
+    }
+
+    h4 {
+      font-weight: normal;
+      font-size: 17px;
+      margin: 0px auto 3px auto;
+    }
+
+    p {
+      color: $lt-acentos;
+      font-size: 17px;
+      margin: 0px auto;
+
+      span.min {
+        font-size: 19px;
+      }
+    }
+
+    li {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      height: 200px;
+      justify-content: center;
+      padding: 0 15px;
+
+      img {
+        max-height: 110px;
+      }
+
+      &:hover {
+        background: white;
+        -webkit-box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.25);
+        -moz-box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.25);
+        box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.25);
+        cursor: pointer;
+        height: 210px;
+        transform: translateY(-5px) scale(1.03);
+      }
+    }
+  }
+
+  &__detalle {
+    background: white;
+    display: inline-block;
+
+    .detalle {
+      &__image-box {
+        align-items: center;
+        background: $bg-image-detalle;
+        display: flex;
+        float: left;
+        min-height: 300px;
+        justify-content: center;
+        width: 32%;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      &__datos {
+        background: $bg-slider;
+        box-sizing: border-box;
+        padding: 30px 40px 0 40px;
+        float: left;
+        max-height: 300px;
+        width: 68%;
+
+        h4 {
+          text-align: left;
+        }
+      }
+
+      &__caracteristicas {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        list-style: none;
+        justify-content: space-between;
+        padding: 3px 0;
+      }
+
+      &__caracteristica {
+        padding: 0;
+        width: 230px;
+
+        h4 {
+          color: $lt-titulos;
+          font-size: 19px;
+        }
+      }
+
+      &__icono {
+        width: 50px;
+      }
+
+      &__titulo {
+        color: $lt-principal;
+        font-size: 21px;
+        font-weight: normal;
+        margin: 5px 0;
+      }
+
+      &__lead {
+        color: $lt-segundaria;
+        font-size: 19px;
+        margin: 15px 0;
+      }
+
+      &__puestos {
+        color: $lt-segundaria;
+        font-size: 19px;
+        line-height: 1.6;
+      }
+    }
+
+  }
+}
