@@ -61,7 +61,7 @@ h5 {
   list-style: none;
   justify-content: space-around;
   margin: 50px auto 20px auto;
-  padding: 40px 60px;
+  padding: 0px 60px;
   position: relative;
   z-index: 10;
 }
@@ -124,22 +124,34 @@ h5 {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
+  height: 200px;
   justify-content: center;
   padding: 0 15px;
 }
 
-/* line 86, src/scss/partials/_nuestros-vehiculos.scss */
+/* line 87, src/scss/partials/_nuestros-vehiculos.scss */
 .nuestros-vehiculos__slider li img {
   max-height: 110px;
 }
 
-/* line 92, src/scss/partials/_nuestros-vehiculos.scss */
+/* line 91, src/scss/partials/_nuestros-vehiculos.scss */
+.nuestros-vehiculos__slider li:hover {
+  background: white;
+  -webkit-box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  height: 210px;
+  transform: translateY(-5px) scale(1.03);
+}
+
+/* line 103, src/scss/partials/_nuestros-vehiculos.scss */
 .nuestros-vehiculos__detalle {
   background: white;
   display: inline-block;
 }
 
-/* line 97, src/scss/partials/_nuestros-vehiculos.scss */
+/* line 108, src/scss/partials/_nuestros-vehiculos.scss */
 .nuestros-vehiculos__detalle .detalle__image-box {
   align-items: center;
   background: #32bea6;
@@ -150,12 +162,12 @@ h5 {
   width: 32%;
 }
 
-/* line 106, src/scss/partials/_nuestros-vehiculos.scss */
+/* line 117, src/scss/partials/_nuestros-vehiculos.scss */
 .nuestros-vehiculos__detalle .detalle__image-box img {
   width: 100%;
 }
 
-/* line 111, src/scss/partials/_nuestros-vehiculos.scss */
+/* line 122, src/scss/partials/_nuestros-vehiculos.scss */
 .nuestros-vehiculos__detalle .detalle__datos {
   background: #fff;
   box-sizing: border-box;
@@ -165,12 +177,12 @@ h5 {
   width: 68%;
 }
 
-/* line 119, src/scss/partials/_nuestros-vehiculos.scss */
+/* line 130, src/scss/partials/_nuestros-vehiculos.scss */
 .nuestros-vehiculos__detalle .detalle__datos h4 {
   text-align: left;
 }
 
-/* line 124, src/scss/partials/_nuestros-vehiculos.scss */
+/* line 135, src/scss/partials/_nuestros-vehiculos.scss */
 .nuestros-vehiculos__detalle .detalle__caracteristicas {
   display: flex;
   flex-direction: row;
@@ -180,24 +192,24 @@ h5 {
   padding: 3px 0;
 }
 
-/* line 133, src/scss/partials/_nuestros-vehiculos.scss */
+/* line 144, src/scss/partials/_nuestros-vehiculos.scss */
 .nuestros-vehiculos__detalle .detalle__caracteristica {
   padding: 0;
   width: 230px;
 }
 
-/* line 137, src/scss/partials/_nuestros-vehiculos.scss */
+/* line 148, src/scss/partials/_nuestros-vehiculos.scss */
 .nuestros-vehiculos__detalle .detalle__caracteristica h4 {
   color: #284f7c;
   font-size: 19px;
 }
 
-/* line 143, src/scss/partials/_nuestros-vehiculos.scss */
+/* line 154, src/scss/partials/_nuestros-vehiculos.scss */
 .nuestros-vehiculos__detalle .detalle__icono {
   width: 50px;
 }
 
-/* line 147, src/scss/partials/_nuestros-vehiculos.scss */
+/* line 158, src/scss/partials/_nuestros-vehiculos.scss */
 .nuestros-vehiculos__detalle .detalle__titulo {
   color: #383938;
   font-size: 21px;
@@ -205,14 +217,14 @@ h5 {
   margin: 5px 0;
 }
 
-/* line 154, src/scss/partials/_nuestros-vehiculos.scss */
+/* line 165, src/scss/partials/_nuestros-vehiculos.scss */
 .nuestros-vehiculos__detalle .detalle__lead {
   color: #797a79;
   font-size: 19px;
   margin: 15px 0;
 }
 
-/* line 160, src/scss/partials/_nuestros-vehiculos.scss */
+/* line 171, src/scss/partials/_nuestros-vehiculos.scss */
 .nuestros-vehiculos__detalle .detalle__puestos {
   color: #797a79;
   font-size: 19px;
