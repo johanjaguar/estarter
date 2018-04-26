@@ -3,10 +3,12 @@ mixin vehiculo(image, titulo, puestosmin, puestosmax)
   li.vehiculo
     img.vehiculo__image(src=image alt=titulo)
     h4.vehiculo__titulo= titulo
-    p.vehiculo__puestos= puestosmin + " - " + puestosmax + " puestos"
+    p.vehiculo__puestos
+      span.min= puestosmin
+      = " - " + puestosmax + " puestos"
 ul.slider-vehiculos
-  +vehiculo('assets/images/default.png', 'Mini Van', 8, 10)
-  +vehiculo('assets/images/default.png', 'Van', 12, 16)
-  +vehiculo('assets/images/default.png', 'Camioneta', 6, 8)
-  +vehiculo('assets/images/default.png', 'Bus Pequeño', 20, 23)
-  +vehiculo('assets/images/default.png', 'Bus Grande', 25,30)
+  +vehiculo('assets/images/minivan.png', 'Mini Van', 8, 10)
+  +vehiculo('assets/images/minivan.png', 'Van', 12, 16)
+  +vehiculo('assets/images/minivan.png', 'Camioneta', 6, 8)
+  +vehiculo('assets/images/minivan.png', 'Bus Pequeño', 20, 23)
+  +vehiculo('assets/images/minivan.png', 'Bus Grande', 25,30)
