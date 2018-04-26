@@ -7,12 +7,11 @@ body {
 
 /* line 9, src/scss/style.scss */
 .container {
-  overflow: hidden;
   margin: 0 auto;
   max-width: 1200px;
 }
 
-/* line 15, src/scss/style.scss */
+/* line 14, src/scss/style.scss */
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -20,7 +19,7 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-/* line 22, src/scss/style.scss */
+/* line 21, src/scss/style.scss */
 h1,
 h2,
 h3,
@@ -63,28 +62,63 @@ h5 {
   justify-content: space-around;
   margin: 50px auto 20px auto;
   padding: 40px 60px;
+  position: relative;
+  z-index: 10;
 }
 
-/* line 29, src/scss/partials/_nuestros-vehiculos.scss */
+/* line 30, src/scss/partials/_nuestros-vehiculos.scss */
+.nuestros-vehiculos__slider ul::before, .nuestros-vehiculos__slider ul::after {
+  background: url("/assets/images/pink-arrow.png") #fd9d9e center center no-repeat;
+  color: #fff;
+  content: '';
+  cursor: pointer;
+  font-size: 38px;
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 11;
+}
+
+/* line 46, src/scss/partials/_nuestros-vehiculos.scss */
+.nuestros-vehiculos__slider ul::before {
+  -webkit-box-shadow: -10px 10px 60px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -10px 10px 60px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: -10px 10px 60px -10px rgba(0, 0, 0, 0.75);
+  left: -30px;
+}
+
+/* line 53, src/scss/partials/_nuestros-vehiculos.scss */
+.nuestros-vehiculos__slider ul::after {
+  -webkit-box-shadow: -10px -10px 60px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -10px -10px 60px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: -10px -10px 60px -10px rgba(0, 0, 0, 0.75);
+  transform: translateY(-50%) rotate(180deg);
+  right: -30px;
+}
+
+/* line 62, src/scss/partials/_nuestros-vehiculos.scss */
 .nuestros-vehiculos__slider h4 {
   font-weight: normal;
   font-size: 17px;
   margin: 0px auto 3px auto;
 }
 
-/* line 35, src/scss/partials/_nuestros-vehiculos.scss */
+/* line 68, src/scss/partials/_nuestros-vehiculos.scss */
 .nuestros-vehiculos__slider p {
   color: #fd9d9e;
   font-size: 17px;
   margin: 0px auto;
 }
 
-/* line 40, src/scss/partials/_nuestros-vehiculos.scss */
+/* line 73, src/scss/partials/_nuestros-vehiculos.scss */
 .nuestros-vehiculos__slider p span.min {
   font-size: 19px;
 }
 
-/* line 45, src/scss/partials/_nuestros-vehiculos.scss */
+/* line 78, src/scss/partials/_nuestros-vehiculos.scss */
 .nuestros-vehiculos__slider li {
   align-items: center;
   display: flex;
@@ -94,18 +128,18 @@ h5 {
   padding: 0 15px;
 }
 
-/* line 53, src/scss/partials/_nuestros-vehiculos.scss */
+/* line 86, src/scss/partials/_nuestros-vehiculos.scss */
 .nuestros-vehiculos__slider li img {
   max-height: 110px;
 }
 
-/* line 59, src/scss/partials/_nuestros-vehiculos.scss */
+/* line 92, src/scss/partials/_nuestros-vehiculos.scss */
 .nuestros-vehiculos__detalle {
   background: white;
   display: inline-block;
 }
 
-/* line 64, src/scss/partials/_nuestros-vehiculos.scss */
+/* line 97, src/scss/partials/_nuestros-vehiculos.scss */
 .nuestros-vehiculos__detalle .detalle__image-box {
   align-items: center;
   background: #32bea6;
@@ -116,12 +150,12 @@ h5 {
   width: 32%;
 }
 
-/* line 73, src/scss/partials/_nuestros-vehiculos.scss */
+/* line 106, src/scss/partials/_nuestros-vehiculos.scss */
 .nuestros-vehiculos__detalle .detalle__image-box img {
   width: 100%;
 }
 
-/* line 78, src/scss/partials/_nuestros-vehiculos.scss */
+/* line 111, src/scss/partials/_nuestros-vehiculos.scss */
 .nuestros-vehiculos__detalle .detalle__datos {
   background: #fff;
   box-sizing: border-box;
@@ -131,12 +165,12 @@ h5 {
   width: 68%;
 }
 
-/* line 86, src/scss/partials/_nuestros-vehiculos.scss */
+/* line 119, src/scss/partials/_nuestros-vehiculos.scss */
 .nuestros-vehiculos__detalle .detalle__datos h4 {
   text-align: left;
 }
 
-/* line 91, src/scss/partials/_nuestros-vehiculos.scss */
+/* line 124, src/scss/partials/_nuestros-vehiculos.scss */
 .nuestros-vehiculos__detalle .detalle__caracteristicas {
   display: flex;
   flex-direction: row;
@@ -146,24 +180,24 @@ h5 {
   padding: 3px 0;
 }
 
-/* line 100, src/scss/partials/_nuestros-vehiculos.scss */
+/* line 133, src/scss/partials/_nuestros-vehiculos.scss */
 .nuestros-vehiculos__detalle .detalle__caracteristica {
   padding: 0;
   width: 230px;
 }
 
-/* line 104, src/scss/partials/_nuestros-vehiculos.scss */
+/* line 137, src/scss/partials/_nuestros-vehiculos.scss */
 .nuestros-vehiculos__detalle .detalle__caracteristica h4 {
   color: #284f7c;
   font-size: 19px;
 }
 
-/* line 110, src/scss/partials/_nuestros-vehiculos.scss */
+/* line 143, src/scss/partials/_nuestros-vehiculos.scss */
 .nuestros-vehiculos__detalle .detalle__icono {
   width: 50px;
 }
 
-/* line 114, src/scss/partials/_nuestros-vehiculos.scss */
+/* line 147, src/scss/partials/_nuestros-vehiculos.scss */
 .nuestros-vehiculos__detalle .detalle__titulo {
   color: #383938;
   font-size: 21px;
@@ -171,14 +205,14 @@ h5 {
   margin: 5px 0;
 }
 
-/* line 121, src/scss/partials/_nuestros-vehiculos.scss */
+/* line 154, src/scss/partials/_nuestros-vehiculos.scss */
 .nuestros-vehiculos__detalle .detalle__lead {
   color: #797a79;
   font-size: 19px;
   margin: 15px 0;
 }
 
-/* line 127, src/scss/partials/_nuestros-vehiculos.scss */
+/* line 160, src/scss/partials/_nuestros-vehiculos.scss */
 .nuestros-vehiculos__detalle .detalle__puestos {
   color: #797a79;
   font-size: 19px;

@@ -24,6 +24,39 @@
       justify-content: space-around;
       margin: 50px auto 20px auto;
       padding: 40px 60px;
+      position: relative;
+      z-index: 10;
+
+      &::before,
+      &::after {
+        background: url('/assets/images/pink-arrow.png') $lt-acentos center center no-repeat;
+        color: $bg-slider;
+        content: '';
+        cursor: pointer;
+        font-size: 38px;
+        height: 60px;
+        width: 60px;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 11;
+      }
+
+      &::before {
+        -webkit-box-shadow: -10px 10px 60px -10px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: -10px 10px 60px -10px rgba(0, 0, 0, 0.75);
+        box-shadow: -10px 10px 60px -10px rgba(0, 0, 0, 0.75);
+        left: -30px;
+      }
+
+      &::after {
+        -webkit-box-shadow: -10px -10px 60px -10px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: -10px -10px 60px -10px rgba(0, 0, 0, 0.75);
+        box-shadow: -10px -10px 60px -10px rgba(0, 0, 0, 0.75);
+        transform: translateY(-50%) rotate(180deg);
+        right: -30px;
+      }
     }
 
     h4 {
@@ -60,7 +93,7 @@
     background: white;
     display: inline-block;
 
-    .detalle {      
+    .detalle {
       &__image-box {
         align-items: center;
         background: $bg-image-detalle;
