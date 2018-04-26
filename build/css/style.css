@@ -68,7 +68,7 @@ h5 {
 
 /* line 30, src/scss/partials/_nuestros-vehiculos.scss */
 .nuestros-vehiculos__slider ul::before, .nuestros-vehiculos__slider ul::after {
-  background: url("/assets/images/pink-arrow.png") #fd9d9e center center no-repeat;
+  background: url("https://johanjaguar.github.io/estarter/assets/images/pink-arrow.png") #fd9d9e center center no-repeat;
   color: #fff;
   content: '';
   cursor: pointer;
